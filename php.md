@@ -36,8 +36,8 @@ server {
 ```
 
 # phpbrew  
-`brew install bzip2 zlib zip mhash mcrypt`
-`phpbrew install 7.3 +default +mysql +fpm +bz2=/usr/local/opt/bzip2 +zlib=/usr/local/opt/zlib +zip=/usr/local/opt/libzip`
+`brew install bzip2 zlib zip mhash mcrypt icu4c`
+`phpbrew install 7.3 +default +mysql +fpm +bz2=/usr/local/opt/bzip2 +zlib=/usr/local/opt/zlib +zip=/usr/local/opt/libzip -- --with-icu-dir=/usr/local/opt/icu4c`
 
 # fpm
 ## /Users/joey/.phpbrew/php/php-7.3.11/etc/php-fpm.d/www.conf
